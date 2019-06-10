@@ -14,7 +14,15 @@
     document.write(n1.toFixed(2) + "<br>");
     //tofixed coloca duas casas décimas apos o . 1500.50
     //caso queira usar usar vígula pode trocar o . por , usando o replace.
-    document.write(n1.toFixed(2).replace('.',','));
+    document.write(n1.toFixed(2).replace('.',',')+ "<br>");
+    document.write(n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})+ "<br>")
+    //toLocaleString deixa o valor em real - parametro BRL;
+    //currency - dinheiro
+    document.write(n1.toLocaleString('pt-BR', {style:'currency', currency: 'USD'} )+ "<br>")
+    // parametro USD - dolar
+    document.write(n1.toLocaleString('pt-BR', {style:'currency', currency: 'EUR'} )+ "<br>")
+    // paramentro EUR - euro
+
 
     </script>
 </body>
