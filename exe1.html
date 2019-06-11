@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Práticando</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Cores</h1>
+    <p>Azul</p>
+    <p>Amarelo</p>
+    <p>Vermelho</p>
+    <p>Pink</p>
+    
+    <div class="destaque">MANIPULANDO O DOM</div>
+<script>
+    
+    var azul = window.document.getElementsByTagName('p')[0];
+    azul.style.color = "blue";
+
+    var amarelo = window.document.getElementsByTagName('p')[1];
+    amarelo.style.color = "yellow";
+
+    var vermelho = window.document.getElementsByTagName('p')[2];
+    vermelho.style.color = "red";
+    
+    var pink = window.document.getElementsByTagName('p')[3];
+    pink.style.color = "pink";
+
+    var verde = window.document.getElementsByClassName('destaque')[0];
+    verde.style.color = "green";
+    
+    var nome = 'DUDA';
+
+    document.write(nome.toLowerCase());
+    document.write("<br>");
+    document.write(nome.toLocaleUpperCase());
+    document.write("<br>");
+    var texto = document.getElementsByTagName("div")[0].innerHTML.toLowerCase();
+    document.write(texto);
+    
+</script>
+
+</body>
+
+</html>
