@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Primeiros passos com DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o DOM</p>
+    <div>Clique em mim</div>
+    <p>DOM - DOCUMENT OBJECT MODEL</p>
+    <P>Componentes de obejtos que vão dar acesso internos do site</P>
+    <p>O DOM não funciona no Node.js só roda no Navegador</p>
+    <h2>Árvore DOM</h2>
+    <p>Tudo do JS está dentro de um objeto chamado window - Janela é um objeto DOM</p>
+    <p>Exemplos de objetos dentro do window:</p>
+    <h3>location</h3>
+    <p>Location - Diz a localização do seu site, qual é a URL, página atual, página anterior ...</p>
+    <h3>document</h3>
+    <p>documento atual</p>
+    <p>Dentro do document, temos o HTML. O HMTL tem dois objetos - (dois filhos) head e body</p>
+    <p>Objetos do head - exemplo: meta e title . Objetos do body exemplo: h1,p e div.</p>
+    <p>Objeto de p exemplo: Strong</p>
+    <h3>history</h3>
+    <p>De onde você veio, para onde você vai.</p>
+    
+    <script>
+    window.document.write("Oi"); //adicionando um componete via DOM
+    window.document.write(window.document.URL);//Mostra url que está acessando.
+
+    //pode acessar por Marca(tag), por ID, por Nome, por classe e por seletor.
+        document.write("<br>");
+    //por marca
+    var corpo = window.document.body;
+    var p1 = window.document.getElementsByTagName('p')[0]; //[0] é o primeiro paragrafo
+    document.write(p1.innerText);//escreve o que está na variavel 
+
+    p1.style.color='blue'; //deixou a letro do primeiro paragrafo em azul
+    corpo.style.background ='pink'; //muda a cor do fundo.
+
+    //por ID
+    //getElementById()
+
+    //por Name
+    //getElementsByName() - quando tenho mais de um objeto usa-se []
+
+    //por classe 
+    //getElementsByClassName()
+
+    
+    </script>
+</body>
+
+</html>
