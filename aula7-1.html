@@ -21,7 +21,7 @@
     
         res.addEventListener('mouseeenter', entrar);
         function somar(){
-            var n1 = EWindow.document.querySelector("input#txt1");
+            var n1 = window.document.querySelector("input#txt1");
             var n2 = window.document.querySelector("input#txt3");
             var n1 = Number(txt1.value);
             var n2 = Number(txt3.value);
@@ -31,7 +31,8 @@
             var res = window.document.getElementById("res");
     
 
-            res.innerHTML(`A soma é de ${soma}`);
+            res.innerHTML = 'A soma é de ' + soma;
+
            
         }
         function entrar(){
