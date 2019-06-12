@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somando números</title>
+</head>
+
+<body>
+    <h1>Soamando valores</h1>
+    <input type="number" name="txt0" id="txt1">
+    +
+    <input type="number" name="txt2" id="txt3">
+    <input type="button" value="somar" id="botao" onclick="somar()">
+    <div id="res">
+
+    </div>
+    <script>
+    
+        res.addEventListener('mouseeenter', entrar);
+        function somar(){
+            var n1 = EWindow.document.querySelector("input#txt1");
+            var n2 = window.document.querySelector("input#txt3");
+            var n1 = Number(txt1.value);
+            var n2 = Number(txt3.value);
+
+            var soma = (n1+n2);
+
+            var res = window.document.getElementById("res");
+    
+
+            res.innerHTML(`A soma é de ${soma}`);
+           
+        }
+        function entrar(){
+            area.style.background="red";
+        }
+
+    </script>
+</body>
+
+</html>
