@@ -1,5 +1,5 @@
 var agora = new Date();
-var hora = agora.getHours();
+var hora = agora.getHours(); //pega a hora atual da máquina ou servidor
 
 console.log(`Agora são ${hora} horas`)
 
